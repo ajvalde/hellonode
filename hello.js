@@ -1,3 +1,25 @@
+
+// printBackwards("Brent")
+// printForwards("Joey")
+findChar("Some Stuff", "u")
+
+
+function findChar (input, character)
+{
+    for (var  i = 0; i < input.length; i++)
+    {
+      //console.log(i, input, character)
+      if (character === input[i])
+      {
+        console.log(i,"Found")
+      }
+      else
+      {
+        console.log("Not Found")
+      }
+    }
+}
+
 function printBackwards (myName)
 {
 
@@ -7,9 +29,6 @@ function printBackwards (myName)
   }
 
 }
-console.log("programstarting");
-printBackwards("Brent")
-
 
 function printForwards (myName)
 {
@@ -20,4 +39,3 @@ function printForwards (myName)
   }
 
 }
-printForwards("Joey")
