@@ -1,7 +1,21 @@
 
 // printBackwards("Brent")
 // printForwards("Joey")
-findChar("Some Stuff", "u")
+//findChar("Some Stuff", "u")
+ console.log(
+   reverse("More stuff")
+ )
+function reverse (Stuff)
+{
+  var slab = ""
+  for (var i = Stuff.length - 1; i >= 0; i--)
+  {
+    //console.log(slab + Salls[i])
+    slab = slab + Stuff[i]
+    //console.log(slab)
+  }
+  return slab;
+}
 
 
 function findChar (input, character)
