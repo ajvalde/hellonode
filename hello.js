@@ -2,9 +2,22 @@
 // printBackwards("Brent")
 // printForwards("Joey")
 //findChar("Some Stuff", "u")
- console.log(
-   reverse("More stuff")
- )
+  //console.log(reverse("More stuff"))
+  //console.log(repeatString("hi", 5))
+console.log(repeatString("hi",5))
+function repeatString(strings, theNumber)
+{
+  var strangs = ""
+  for (var i = 0; i <= theNumber ; i++)
+  {
+    strangs = strangs + strings
+    //console.log(i,strings,strangs)
+  }
+  return strangs;
+}
+
+
+
 function reverse (Stuff)
 {
   var slab = ""
