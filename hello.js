@@ -6,7 +6,27 @@
   //console.log(repeatString("hi", 5))
 //console.log(repeatString("hi",5))
 
-console.log(head("House",3))
+//console.log(head("House",3))
+
+console.log(tail("Chair", 4))
+
+function tail(leString, leNumber)
+{
+  var leWant = ""
+
+  for (var i = leString.length - 1; i > leString.length - 1 - leNumber; i--)
+  {
+    leWant = leWant + leString[i]
+  }
+  leWant =reverse(leWant)
+  return leWant;
+}
+
+
+
+
+
+
 
 function head(string, number)
 {
