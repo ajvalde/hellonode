@@ -1,14 +1,39 @@
 
 // printBackwards("Brent")
 // printForwards("Joey")
-//findChar("Some Stuff", "u")
-  //console.log(reverse("More stuff"))
-  //console.log(repeatString("hi", 5))
+console.log(findChar("dog", "g"))
 //console.log(repeatString("hi",5))
 
 //console.log(head("House",3))
 
-console.log(tail("Chair", 4))
+//console.log(tail("Chair", 4))
+
+// console.log(findCharnew("cat", "t"))
+//
+// function findCharnew(inputt, index)
+// {
+//   var theIndex = ""
+//   for( i = 0; i < inputt.length; i++)
+//   {
+//     //theIndex = theIndex + inputt[i]
+//     if (index === inputt[i])
+//     {
+//       return inputt.indexOf(index);
+//     }
+//   //  else
+//     {
+//       {
+//     //    return -1;
+//       }
+//     }
+//   }
+// }
+
+
+
+
+
+
 
 function tail(leString, leNumber)
 {
@@ -57,6 +82,7 @@ function repeatString(strings, theNumber)
 function reverse (Stuff)
 {
   var slab = ""
+
   for (var i = Stuff.length - 1; i >= 0; i--)
   {
     //console.log(slab + Salls[i])
@@ -74,13 +100,16 @@ function findChar (input, character)
       //console.log(i, input, character)
       if (character === input[i])
       {
-        console.log(i,"Found")
+        //console.log(i,"Found")
+        return i;
       }
       else
       {
-        console.log("Not Found")
+        //return -1;
+        //console.log("Not Found")
       }
     }
+    return -1;
 }
 
 function printBackwards (myName)
