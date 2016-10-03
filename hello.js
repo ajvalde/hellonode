@@ -1,7 +1,7 @@
 
 // printBackwards("Brent")
 // printForwards("Joey")
-console.log(findChar("dog", "g"))
+//console.log(findChar("cat", "a"))
 //console.log(repeatString("hi",5))
 
 //console.log(head("House",3))
@@ -9,7 +9,22 @@ console.log(findChar("dog", "g"))
 //console.log(tail("Chair", 4))
 
 // console.log(findCharnew("cat", "t"))
-//
+
+console.log(stringReplace("Boat","a","d"))
+
+function stringReplace(string, value, repValue)
+{
+  var varnew = string.replace(value, repValue);
+  //findChar(string, value)
+  {
+    varnew = varnew
+
+  }
+  return varnew;
+}
+
+
+
 // function findCharnew(inputt, index)
 // {
 //   var theIndex = ""
@@ -28,6 +43,7 @@ console.log(findChar("dog", "g"))
 //     }
 //   }
 // }
+
 
 
 
