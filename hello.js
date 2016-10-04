@@ -10,7 +10,24 @@
 
 // console.log(findCharnew("cat", "t"))
 
-console.log(stringReplace("Boat","a","d"))
+//console.log(stringReplace("Boat","B","n"))
+
+console.log(getNum("15A-11"))
+
+function getNum(num)
+{
+  var newnum = num.match(/(\d[\d\.]*)/g)
+  {
+    newnum = newnum
+  }
+  return newnum;
+}
+
+
+
+
+
+
 
 function stringReplace(string, value, repValue)
 {
