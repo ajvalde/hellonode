@@ -12,13 +12,61 @@
 
 //console.log(stringReplace("Boat","B","n"))
 
-console.log(getNum("15A-11"))
+//console.log(getNum("15-11"))
+
+//console.log(addNum(1,2))
+
+console.log(greaterNum(5,9))
+
+function greaterNum(num1,num2)
+{
+  if (num1 > num2)
+  {
+    return 1;
+  }
+  else if (num1 === num2)
+  {
+
+  }
+  else
+  {
+    return -1;
+  }
+  return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+function addNum(num1,num2)
+{
+  var sum = num1 + num2
+  {
+
+  }
+  return sum;
+}
+
+
+
+
+
+
+
 
 function getNum(num)
 {
   var newnum = num.match(/(\d[\d\.]*)/g)
+
   {
-    newnum = newnum
+    //newnum = newnum
   }
   return newnum;
 }
