@@ -1,7 +1,7 @@
 
 // printBackwards("Brent")
 // printForwards("Joey")
-//console.log(findChar("cat", "a"))
+console.log(findChar("cat", "a"))
 //console.log(repeatString("hi",5))
 
 //console.log(head("House",3))
@@ -10,13 +10,13 @@
 
 // console.log(findCharnew("cat", "t"))
 
-//console.log(stringReplace("Boat","B","n"))
+console.log(stringReplace("Boat","p","n"))
 
 //console.log(getNum("15-11"))
 
 //console.log(addNum(1,2))
 
-console.log(greaterNum(5,9))
+//console.log(greaterNum(9,9))
 
 function greaterNum(num1,num2)
 {
@@ -26,66 +26,51 @@ function greaterNum(num1,num2)
   }
   else if (num1 === num2)
   {
-
+    return 0;
   }
   else
   {
     return -1;
   }
-  return 0;
+
 }
-
-
-
-
-
-
-
-
 
 
 
 function addNum(num1,num2)
 {
   var sum = num1 + num2
-  {
 
-  }
   return sum;
 }
-
-
-
-
-
-
 
 
 function getNum(num)
 {
   var newnum = num.match(/(\d[\d\.]*)/g)
 
-  {
-    //newnum = newnum
-  }
+
   return newnum;
 }
 
 
-
-
-
-
-
-function stringReplace(string, value, repValue)
+function stringReplace(word, value, repValue)
 {
-  var varnew = string.replace(value, repValue);
-  //findChar(string, value)
+  var newString = ""
+  for(i =0; i < word.length; i++)
   {
-    varnew = varnew
-
+    //newString = newString + word[i]
+    if (value === word[i])
+    {
+      newString = newString + repValue
+    }
+    else {
+      {
+        newString = newString + word[i]
+      }
+    }
   }
-  return varnew;
+  return newString;
 }
 
 
@@ -110,12 +95,6 @@ function stringReplace(string, value, repValue)
 // }
 
 
-
-
-
-
-
-
 function tail(leString, leNumber)
 {
   var leWant = ""
@@ -127,11 +106,6 @@ function tail(leString, leNumber)
   leWant =reverse(leWant)
   return leWant;
 }
-
-
-
-
-
 
 
 function head(string, number)
@@ -186,8 +160,7 @@ function findChar (input, character)
       }
       else
       {
-        //return -1;
-        //console.log("Not Found")
+
       }
     }
     return -1;
