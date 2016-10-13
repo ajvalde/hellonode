@@ -4,9 +4,12 @@ var cnum = ['4916-2600-1804-0530', '4779-252888-3972', '4252-278893-7978', '4556
 
 for (j = 0; j < cnum.length; j++)
 {
-  replaceChar(cnum[j],"-",0)
-  var random = replaceChar(cnum[j],"-",0)
-  console.log(convert(random))
+   replaceChar(cnum[j],"-",0)
+   var random = replaceChar(cnum[j],"-",0)
+   convert(random)
+   var nums = convert(random)
+   console.log(addNum(nums))
+
 }
 
 function replaceChar(cnum,value,repValue)
@@ -36,6 +39,18 @@ function replaceChar(cnum,value,repValue)
    for ( i = 0; i < cardNum.length; i++)
    {
      num.push(parseInt(cardNum[i]))
-}
+   }
+
    return num;
+
+ }
+
+ function addNum(cardNum)
+ {
+   var sum = ""
+   for (i = 0,sum = 0; i < cardNum.length; sum += cardNum[i++])
+   {
+     
+   }
+   return sum;
  }
