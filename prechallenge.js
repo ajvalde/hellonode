@@ -1,24 +1,13 @@
-
+var teststring = ["2-2","3-3","4-4"]
 var cnum = ['4916-2600-1804-0530', '4779-252888-3972', '4252-278893-7978', '4556-4242-9283-2260']
-//console.log (replaceChar(cnum,"-",0))
+console.log(maxNum(cnum))
 
-for (j = 0; j < cnum.length; j++)
-{
-   replaceChar(cnum[j],"-",0)
-   var random = replaceChar(cnum[j],"-",0)
-   convert(random)
-   var nums = convert(random)
-   console.log(addNum(nums))
-
-}
 
 function replaceChar(cnum,value,repValue)
 {
-
   var cardNum = ""
   for (i = 0; i < cnum.length; i++)
   {
-    //cardNum = cardNum + num
     if (value === cnum[i])
     {
       cardNum = cardNum + repValue
@@ -32,8 +21,7 @@ function replaceChar(cnum,value,repValue)
   return cardNum;
 }
 
-
- function convert(cardNum)
+function convert(cardNum)
  {
    var num = []
    for ( i = 0; i < cardNum.length; i++)
@@ -42,15 +30,41 @@ function replaceChar(cnum,value,repValue)
    }
 
    return num;
-
  }
 
  function addNum(cardNum)
  {
-   var sum = ""
-   for (i = 0,sum = 0; i < cardNum.length; sum += cardNum[i++])
+   var sums = []
+   for (i = 0,sums = 0; i < cardNum.length; sums += cardNum[i++])
    {
-     
+
    }
-   return sum;
+   return sums;
  }
+
+ function maxNum(numbers)
+ {
+   var maxValue = numbers[0]
+
+
+   for (j = 0; j < numbers.length; j++)
+   {
+      if (cardProcess(numbers[j]) >= cardProcess(maxValue))
+      {
+        maxValue = numbers[j]
+
+     }
+   }
+
+   return maxValue;
+ }
+
+ function cardProcess (cardnumber)
+ {
+
+      var random = replaceChar(cardnumber,"-",0)
+      var nums = convert(random)
+      var sums = addNum(nums)
+
+      return sums;
+  }
